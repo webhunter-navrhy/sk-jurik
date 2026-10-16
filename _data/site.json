@@ -1,0 +1,51 @@
+{
+  "slug": "sk-jurik",
+  "nazev": "Autoservis Jurík",
+  "url": "https://webhunter-navrhy.github.io/sk-jurik/",
+  "base": "/sk-jurik/",
+  "lang": "sk",
+  "popis": "Autoservis Jurík v Bratislave - Rusovciach: servis všetkých značiek, pneuservis, diagnostika, klimatizácie a 3D geometria. Od roku 2000.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "banner.jpg",
+  "logo": "logo.png",
+  "theme_color": "#171717",
+  "typ": "LocalBusiness",
+  "ico": "",
+  "kontakt": {
+    "email": "tomas@autoservisjurik.sk",
+    "telefon": "+421 915 700 749",
+    "adresa": {
+      "ulice": "Balkánska 302",
+      "psc": "",
+      "mesto": "Bratislava - Rusovce",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu autoservisjurik.sk"
+  },
+  "nav": [
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "Cenník",
+      "href": "#cennik"
+    },
+    {
+      "text": "Otázky",
+      "href": "#otazky"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

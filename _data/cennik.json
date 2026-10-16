@@ -1,0 +1,47 @@
+[
+  {
+    "cena": "130 €",
+    "nazev": "Servisná prehliadka (veľký servis)",
+    "body": [
+      "Pokročilá diagnostika",
+      "Výmena oleja a prevádzkových náplní",
+      "Výmena filtrov (palivový, vzduchový, peľový a olejový)"
+    ]
+  },
+  {
+    "cena": "od 123 €",
+    "nazev": "Kompletný servis autoklimatizácie",
+    "body": [
+      "Typ chladiva R134a",
+      "Novší typ chladiva R1234yf za príplatok",
+      "Cena je kalkulovaná na 500 g chladiva"
+    ]
+  },
+  {
+    "cena": "70 €",
+    "nazev": "Nastavenie geometrie jednej nápravy",
+    "body": [
+      "V cene je zahrnuté zameranie geometrie",
+      "Každý ďalší úkon +10 € (napr. nastavenie odklonu, záklonu)",
+      "Nahrievanie dielov pri hrdzi alebo poškodení +15 €"
+    ]
+  },
+  {
+    "cena": "od 12 €",
+    "nazev": "Prezutie pneu (1 ks), osobné vozidlá a SUV",
+    "body": [
+      "Montáž a demontáž z vozidla aj z disku, vyváženie a závažie (do 200 g)",
+      "13\"–15\": 12 € · 16\"–17\": 14,50 € · 18\"–19\": 17 €",
+      "20\"–21\": 19 € · 22\" a viac: 21,50 € · RUNFLAT +3 €"
+    ]
+  },
+  {
+    "cena": "40 €",
+    "nazev": "Základná diagnostika",
+    "body": [
+      "Na počkanie",
+      "Kontrola vozidla cez počítač",
+      "Rýchla, efektívna a lacná kontrola"
+    ]
+  }
+]

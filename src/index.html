@@ -1,0 +1,109 @@
+{% extends "_base.html" %}
+{% set titulek = 'Autoservis Jurík – autoservis a pneuservis Bratislava, Rusovce' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  {{ img('dielna.jpg', '', sizes='100vw', cls='hero-bg') }}
+  <div class="wrap hero-in">
+    <p class="kicker">Rusovce · Bratislava · od roku 2000</p>
+    <h1>Tvoje auto,<br><span>naša starosť.</span></h1>
+    <p class="lead">Poctivý rodinný autoservis. Servisujeme všetky značky, malé aj veľké závady, a nikdy nenaberáme viac vozidiel na jeden termín.</p>
+    <div class="tlacitka">
+      <a class="btn" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">Zavolať: {{ site.kontakt.telefon }}</a>
+      <a class="btn btn-o" href="#sluzby">Naše služby</a>
+    </div>
+  </div>
+  <div class="pas">
+    <div class="wrap pas-in">
+      <div><b>15 000+</b><span>spokojných klientov</span></div>
+      <div><b>25+</b><span>rokov skúseností</span></div>
+      <div><b>8:00–17:00</b><span>každý pracovný deň</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sekce sluzby" id="sluzby">
+  <div class="wrap">
+    <p class="kicker">Naše služby</p>
+    <h2>Všetko pre Tvoje auto na jednom mieste</h2>
+    <ol class="sl-zoznam" role="list">
+      {% for s in data.sluzby %}<li><span class="cislo">{{ '%02d' % loop.index }}</span><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="sekce o-nas">
+  <div class="wrap o-grid">
+    <div class="o-foto">{{ img('mechanik.jpg', 'Mechanik pri výmene kolesa v autoservise', sizes='(min-width: 60rem) 36rem, 100vw') }}</div>
+    <div>
+      <p class="kicker">Sme rodinný autoservis</p>
+      <h2>S dlhoročnou históriou</h2>
+      <p>Servisovaniu vozidiel sa venujeme už od roku 2000. K práci pristupujeme zodpovedne, všetci naši mechanici sú profesionálne vyškolení a priebežne obnovujeme naše certifikácie.</p>
+      <ul class="plus" role="list">
+        <li>Krátke čakanie na termín</li>
+        <li>Tvojmu vozidlu sa venujeme na 100 %</li>
+        <li>Vážime si Tvoj čas</li>
+        <li>Prácu robíme kvalitne a precízne</li>
+      </ul>
+      <blockquote>
+        <p>„Špičkový servis a páni, čo sa naozaj vyznajú. Servisujeme tu s priateľkou obe naše autá a sme maximálne spokojní.“</p>
+        <cite>Matej Šalaga, Google recenzie</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="sekce cennik" id="cennik">
+  <div class="wrap">
+    <p class="kicker">Cenník služieb</p>
+    <h2>Ceny vopred, bez prekvapení</h2>
+    <div class="c-grid">
+      {% for c in data.cennik %}
+      <article class="c-karta">
+        <div class="c-cena">{{ c.cena }}</div>
+        <h3>{{ c.nazev }}</h3>
+        <ul role="list">{% for b in c.body %}<li>{{ b }}</li>{% endfor %}</ul>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="poznamka">Pre presnú cenovú ponuku nás kontaktuj telefonicky alebo mailom.</p>
+  </div>
+</section>
+
+<section class="sekce faq" id="otazky">
+  <div class="wrap faq-grid">
+    <div><p class="kicker">Časté otázky</p><h2>Čo sa nás pýtate</h2></div>
+    <div>
+      {% for f in data.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt">
+  <div class="wrap k-grid">
+    <div>
+      <p class="kicker">Nezáväzne nás kontaktuj</p>
+      <h2>Objednaj sa na servis</h2>
+      <p class="k-tel"><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+      <p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+      <p>Balkánska 302<br>Bratislava – Rusovce</p>
+      <p>Po–Pi 8:00–17:00 (obedná prestávka 12:00–13:00)</p>
+    </div>
+    <div class="k-form">
+      <form class="formular" method="post" data-endpoint="" data-demo="1">
+        <label>Meno <input name="jmeno" autocomplete="name" required></label>
+        <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
+        <label>Telefón <input name="telefon" type="tel" autocomplete="tel"></label>
+        <label>Služba
+          <select name="sluzba"><option>Oprava vozidla</option><option>Kontrola stavu vozidla</option><option>Výmena oleja</option><option>Prezutie</option><option>3D geometria</option><option>Iný servis</option><option>Všeobecné otázky</option></select>
+        </label>
+        <label>Správa <textarea name="zprava" rows="4" required></textarea></label>
+        <div class="past" aria-hidden="true"><label>Nevyplňovať <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
+        <button type="submit" class="btn">Odoslať</button>
+        <p class="formular-stav" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

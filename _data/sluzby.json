@@ -1,0 +1,26 @@
+[
+  {
+    "nazev": "Autoservis",
+    "popis": "Mechanické, systémové a elektrické závady na vozidlách všetkých značiek. Potrpíme si na kvalitnú prácu a rýchlosť."
+  },
+  {
+    "nazev": "Pneuservis",
+    "popis": "Výmena kolies, prezúvanie, oprava pneumatík, geometria a ďalšie služby okolo pneuservisu."
+  },
+  {
+    "nazev": "Klimatizácie",
+    "popis": "Kompletný servis a dezinfekcia autoklimatizácie, aby ste šoférovali v príjemnom a zdravotne nezávadnom prostredí."
+  },
+  {
+    "nazev": "Diagnostika",
+    "popis": "Pred opravou presná a odborná diagnostika: diagnostika systémov aj mechanická diagnostika vozidiel."
+  },
+  {
+    "nazev": "3D geometria",
+    "popis": "Presné nastavenie podvozku pre bezpečnosť, bezproblémový chod a optimálne jazdné vlastnosti Vášho auta."
+  },
+  {
+    "nazev": "Kontrola pred kúpou",
+    "popis": "Istota, že vozidlo, ktoré kupujete, je v dobrom stave, bezpečné a spĺňa všetky základné požiadavky."
+  }
+]
